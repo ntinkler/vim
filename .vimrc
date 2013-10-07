@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
 
 " Colorscheme settings here:
 colorscheme molokai
@@ -37,6 +38,9 @@ set encoding=utf8
 " Show tabs and hidden whitespace
 set listchars=tab:▸\ ,trail:▫
 set list
+
+" Show line numbers
+set nu
 
 " Use spaces instead of tabs
 set expandtab
