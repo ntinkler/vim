@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
 
 " Colorscheme settings here:
 colorscheme molokai
@@ -31,8 +32,8 @@ map <C-n> :NERDTreeToggle<CR>
 " Turn on syntax highlighting
 syntax on
 
-" Show line numbers
-set nu
+" Turn on mouse support by default (use xterm for best results!)
+set mouse=a
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -40,6 +41,9 @@ set encoding=utf8
 " Show tabs and hidden whitespace
 set listchars=tab:▸\ ,trail:▫
 set list
+
+" Show line numbers
+set nu
 
 " Use spaces instead of tabs
 set expandtab
