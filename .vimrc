@@ -31,6 +31,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Turn on syntax highlighting
 syntax on
 
+" Show line numbers
+set nu
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -60,6 +63,9 @@ set history=1000
 " Highlight search by default, press enter to stop
 set hlsearch
 :nnoremap <CR> :nohlsearch<CR>
+
+" Disable autocomment because that shit is obnoxious...
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " required!
 filetype plugin indent on
